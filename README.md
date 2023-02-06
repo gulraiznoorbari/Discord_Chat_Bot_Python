@@ -1,22 +1,22 @@
-# Twitter Tweeting Bot
+# Discord Bot
 
-### This Bot was developed using Twitter API v2
+<img width="100%" src="https://user-images.githubusercontent.com/78252747/217056122-a82cde87-24dc-4902-ac3d-4271a7a0020b.png"/>
 
--   `bot.py` uses twitter-python library
--   `bot2.py` uses tweepy library
-    Both these libraries serve as python wrappers for the original Twitter API v2
+### This Bot was developed using Discord API in python (discord.py)
 
-The bot tweets anything you want, currently it tweets the current date.
+The bot responds to commands given by the users. Currently it has limited set of commands to respond to, but we can easily add more.
 
 ## ⬇️ How to setup
 
-1. Goto [Twitter Developer Platform](https://developer.twitter.com/) and create a new project.
-2. Generate and Copy the BEARER_TOKEN, API_KEY, API_KEY_SECRET, ACCESS_TOKEN & ACCESS_TOKEN_SECRET and paste them in a `.env` file.
-3. Then Copy & Paste the following commands in your terminal:
+1. Login/Signup on [Discord Developer Portal](https://discord.com/developers/applications) and create a new Application.
+2. [Setup a bot Application](https://discordjs.guide/preparations/setting-up-a-bot-application.html)
+3. [Add the bot to a Server](https://discordjs.guide/preparations/adding-your-bot-to-servers.html)
+4. Copy/Paste the BOT_TOKEN in a `.env` file.
+5. Then Copy & Paste the following commands in your terminal:
 
 ```
-git clone https://github.com/gulraiznoorbari/Twitter_Tweeting_Bot.git
-cd Twitter_Tweeting_Bot
+git clone https://github.com/gulraiznoorbari/Discord_Chat_Bot_Python.git
+cd Discord_Chat_Bot_Python
 python bot.py
 ```
 
