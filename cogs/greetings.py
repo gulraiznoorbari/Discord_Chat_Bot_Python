@@ -52,7 +52,7 @@ class greetings(commands.Cog):
         await before.channel.send(
             f'{before.author.name} edited their message.\n'
             f'Before: {before.content}\n'
-            f'After: {after.content}'
+            f'After: {after.content}\n'
             f'Your Fingers are broken!'
         )
 
