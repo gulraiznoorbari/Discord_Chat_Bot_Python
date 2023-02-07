@@ -20,6 +20,8 @@ cd Discord_Chat_Bot_Python
 python bot.py
 ```
 
+### OPTIONAL: The Bot can be deployed on [DisCloud (Cloud Hosting for bots)](https://discloudbot.com/en_US) so it doesn't stop when terminal is closed.
+
 ## 👨‍💻 Author
 
 You can get in touch with me on my LinkedIn Profile:
