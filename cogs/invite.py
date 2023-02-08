@@ -11,7 +11,7 @@ class invite(commands.Cog):
     async def invite(self, ctx):
         embed = discord.Embed(
             title="BOT INVITE LINK",
-            description="You can invite me to your server by clicking [here](https://discord.com/api/oauth2/authorize?client_id=1072079088111583335&permissions=8&scope=bot)",
+            description="You can invite me to your server by [Clicking Here](https://discord.com/api/oauth2/authorize?client_id=1072079088111583335&permissions=8&scope=bot)",
             color=discord.Color.blue())
 
         await ctx.send(embed=embed)
