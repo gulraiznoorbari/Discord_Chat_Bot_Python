@@ -18,7 +18,7 @@ class greetings(commands.Cog):
             greetings = ["hello", "hi", "Hello", "Hi"]
             for greeting in greetings:
                 if message.content == greeting:
-                    await message.channel.send(f"Hey {message.author.mention}! Welcome to the server!\n Use ***'!help'*** to see the list of commands I can do!")
+                    await message.channel.send(f"Hey {message.author.mention}! Welcome to the server!\nUse ***'!help'*** to see the list of commands I can do!")
 
             if (message.content == "bye" or message.content == "Bye"):
                 await message.channel.send(f"Bye {message.author.name}! See you later!")
