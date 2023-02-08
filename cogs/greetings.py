@@ -10,21 +10,21 @@ class greetings(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self, message):
         # Prevents the bot from responding to itself:
-        # if message.author == self.bot.user:
-        #     return
+        if message.author == self.bot.user:
+            return
 
         if message.channel.name == "general":
 
             greetings = ["hello", "hi", "Hello", "Hi"]
             for greeting in greetings:
                 if message.content == greeting:
-                    await message.channel.send(f"Hey {message.author.name}! Welcome to the server!")
+                    await message.channel.send(f"Hey {message.author.mention}! Welcome to the server!\n Use ***'!help'*** to see the list of commands I can do!")
 
             if (message.content == "bye" or message.content == "Bye"):
                 await message.channel.send(f"Bye {message.author.name}! See you later!")
 
             if message.content == "How are you?":
-                await message.channel.send("I'm fine, thanks for asking!")
+                await message.channel.send("I'm fine, thanks for asking! \nWhat about you?")
 
             if message.content == "What's your name?":
                 await message.channel.send("My name is Billy and I talk trash!")
@@ -50,10 +50,10 @@ class greetings(commands.Cog):
     @commands.Cog.listener()
     async def on_message_edit(self, before, after):
         await before.channel.send(
-            f'{before.author.name} edited their message.\n'
-            f'Before: {before.content}\n'
-            f'After: {after.content}\n'
-            f'Your Fingers are broken!'
+            f'{before.author.mention} edited their message.\n'
+            f'**Before:** {before.content}\n'
+            f'**After:** {after.content}\n'
+            f'**Are your fingers broken???**'
         )
 
 

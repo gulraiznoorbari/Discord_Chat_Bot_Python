@@ -23,8 +23,12 @@ class help(commands.Cog):
                         value='For Asking how I am', inline=False)
         embed.add_field(name='\U000027A1 What\'s your name?',
                         value='For Asking my name', inline=False)
+        embed.add_field(name='\U000027A1 cool',
+                        value='For reaction', inline=False)
         embed.add_field(name='\U000027A1 !joke',
                         value='For Random Dad Joke...haha', inline=False)
+        embed.add_field(name='\U000027A1 !invite',
+                        value='For Invite Link', inline=False)
 
         await ctx.send(embed=embed)
 
