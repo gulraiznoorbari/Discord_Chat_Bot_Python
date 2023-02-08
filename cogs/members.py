@@ -23,7 +23,11 @@ class members(commands.Cog):
 
     @commands.Cog.listener()
     async def on_member_remove(self, member):
-        await member.send(f"{member.mention} has left the server.")
+        channel = discord.utils.get(
+            member.guild.channels,
+            name="general"
+        )
+        await channel.send(f"{member.mention} has left the server.")
 
 
 async def setup(bot):
