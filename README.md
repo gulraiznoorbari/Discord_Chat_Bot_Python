@@ -19,6 +19,13 @@ git clone https://github.com/gulraiznoorbari/Discord_Chat_Bot_Python.git
 cd Discord_Chat_Bot_Python
 python bot.py
 ```
+### OPTIONAL: The bot can be hosted on [DisCloud](https://discloudbot.com/en_US) (cloud hosting for Discord Bots) so it doesn't stop when you close the terminal.
+
+## Future Work:
+
+- [x] Add Slash Commands (using [nextcord](https://docs.nextcord.dev/en/stable/interactions.html) or [discord-py-slash-command](https://discord-interactions.readthedocs.io/en/latest/quickstart.html#now-let-s-create-our-first-slash-command))
+- [x] API Integration
+
 
 ## 👨‍💻 Author
 
