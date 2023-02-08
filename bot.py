@@ -37,9 +37,8 @@ async def load():
         if file.endswith('.py'):
             await bot.load_extension(f'cogs.{file[:-3]}')
 
+
 # Run the bot:
-
-
 async def main():
     # Load all cogs:
     await load()
